@@ -17,8 +17,9 @@
 - docker-compose up -d (if you have problem with port change APP_port value in .env file )
 - docker exec -it file-reader-laravel-9_reader.file_1 composer install
 - docker exec -it file-reader-laravel-9_reader.file_1 php artisan key:generate
-- docker exec -it file-reader-laravel-9_reader.file_1 chown -R sail:sail
+- docker exec -it file-reader-laravel-9_reader.file_1 chown -R sail:sail storage
 - docker exec -it file-reader-laravel-9_reader.file_1 php artisan test
+- docker-compose restart
 - visit http://localhost:9000 (9000 is APP_port value in .env file)
 
 ### Install without docker

@@ -13,6 +13,7 @@
 ### Install with docker
 - clone or extract project 
 - go to the project folder
+- cp .env.example .env
 - docker-compose up -d (if you have problem with port change APP_port value in .env file )
 - docker exec -it file-reader-mbfouad_reader.file_1 composer install
 - docker exec -it file-reader-mbfouad_reader.file_1 php artisan key:generate
@@ -22,6 +23,7 @@
 ### Install without docker
 - clone or extract project 
 - go to the project folder
+- cp .env.example .env
 - composer install
 - php artisan key:generate
 - php artisan serve

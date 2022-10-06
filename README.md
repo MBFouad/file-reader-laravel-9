@@ -28,7 +28,7 @@
 - cp .env.example .env
 - composer install
 - php artisan key:generate
-- chmod 777 -R storage
+- chown -R $USER:$USER storage
 - php artisan serve
 - php artisan test
 - visit http://localhost:8000
